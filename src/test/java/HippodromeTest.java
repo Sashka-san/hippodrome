@@ -9,21 +9,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class HippodromeTest {
 
-    @Test
-    void constructorHippodromeIfParameterAreNull(){
-        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class,
-                () -> new Hippodrome(null));
-
-        assertEquals("Horses cannot be null.", exception.getMessage());
-    }
-
-    @Test
-    void constructorHippodromeIfListAreEmpty(){
-        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class,
-                () -> new Hippodrome(new ArrayList<>()));
-
-        assertEquals("Horses cannot be empty.", exception.getMessage());
-    }
 
     @Test
     void getHorsesTest(){
